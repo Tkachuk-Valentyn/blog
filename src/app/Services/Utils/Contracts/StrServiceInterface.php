@@ -2,7 +2,7 @@
 
 namespace App\Services\Utils\Contracts;
 
-interface StrSeviceInterface
+interface StrServiceInterface
 {
-
+    public function slug(string $header, string $separator = '-'): string;
 }

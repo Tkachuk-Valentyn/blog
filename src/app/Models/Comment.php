@@ -18,13 +18,12 @@ class Comment extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    protected $table = 'posts';
+    protected $table = 'comments';
 
     protected $fillable = [
-        'header',
-        'text',
-        'photo',
-        'slug'
+        'author',
+        'description',
+        'id_post'
     ];
     protected  $primaryKey = 'id';
 
